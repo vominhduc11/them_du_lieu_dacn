@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-group">
+        <label for="name">Product Name:</label>
+        <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+        <label for="image">Image URL:</label>
+        <input type="text" id="image" name="image" required>
+    </div>
+    <div class="form-group">
+        <label for="star">Star Rating:</label>
+        <input type="number" id="star" name="star" min="0" max="5" step="0.1" required>
+    </div>
+    <div class="form-group">
+        <label for="evaluate">Number of Reviews:</label>
+        <input type="number" id="evaluate" name="evaluate" required>
+    </div>
+    <div class="form-group">
+        <label for="booked">Booked Count:</label>
+        <input type="number" id="booked" name="booked" required>
+    </div>
+    <div class="form-group">
+        <label for="notify">Notification:</label>
+        <input type="text" id="notify" name="notify">
+    </div>
+    <div class="form-group">
+        <label for="place">Place:</label>
+        <input type="text" id="place" name="place">
+    </div>
+    <div class="form-group">
+        <label for="highlight">Highlights:</label>
+        <textarea id="highlight" name="highlight" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="information">Information:</label>
+        <textarea id="information" name="information" required></textarea>
+    </div>
+    <div class="form-group">
+        <label for="category">Category:</label>
+        <input type="text" id="category" name="category" required>
+    </div>
+    <div class="form-group">
+        <label for="city">City:</label>
+        <select id="city" name="city" required>
+            <option value="">-- Select City --</option>
+            <option value="1">Hà Nội</option>
+            <option value="2">Hồ Chí Minh</option>
+            <option value="3">Đà Nẵng</option>
+            <option value="4">Nha Trang</option>
+            <option value="5">Đà Lạt</option>
+            <option value="6">Quy Nhơn</option>
+            <option value="7">Seoul</option>
+            <option value="8">Busan</option>
+            <option value="9">Gangwon-do</option>
+            <option value="10">Gyeonggi-do</option>
+            <option value="11">Tokyo</option>
+            <option value="12">Kyoto</option>
+            <option value="13">Osaka</option>
+            <option value="14">Hokkaido</option>
+            <option value="15">Đài Bắc</option>
+            <option value="16">Đài Trung</option>
+            <option value="17">Nghi Lan</option>
+            <option value="18">Hoa Liên</option>
+            <option value="19">Thâm Quyến</option>
+            <option value="20">Quảng Châu</option>
+            <option value="21">Thượng Hải</option>
+            <option value="22">Bắc Kinh</option>
+            <option value="23">Bangkok</option>
+            <option value="24">Phuket</option>
+            <option value="25">Chiang Mai</option>
+            <option value="26">Krabi</option>
+            <option value="27">Sydney</option>
+            <option value="28">Melbourne</option>
+            <option value="29">Gold Coast</option>
+            <option value="30">Adelaide</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+            <option value="">-- Select Country --</option>
+            <option value="1">Việt Nam</option>
+            <option value="2">Hàn Quốc</option>
+            <option value="3">Nhật Bản</option>
+            <option value="4">Đài Loan</option>
+            <option value="5">Trung Quốc</option>
+            <option value="6">Thái Lan</option>
+            <option value="7">Úc</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="package">Package:</label>
+        <div id="package-list">
+            <!-- Các input sẽ được thêm vào ở đây -->
+        </div>
+        <button type="button" id="addPackage">Add Package</button>
+    </div>
+
+    <button type="submit">Submit</button>
+</body>
+<script>
+
+    // JavaScript để thêm input cho danh sách Quantity
+    document.getElementById('addPackage').onclick = function () {
+        const packageList = document.getElementById('package-list');
+        const newPackage = document.createElement('div');
+        newPackage.classList.add('form-group');
+        newPackage.innerHTML = `
+                <div style="background-color: antiquewhite;">
+                    <div class="form-group"> 
+                        <label for="package_name">Package_name:</label>
+                        <input style="width: 50%;" type="text" id="package_name" name="package_name" required>
+                    </div>
+                    <div class="form-group">
+                        <label style="font-size:12px" for="package_name">Số lượng:</label>
+                        <div id="amount-list">    
+
+                        </div>
+                    </div>
+                    <button onclick="abc()" style="font-size:12px" type="button" id="addAmount">Add số lượng</button>    
+                </div>
+            `;
+        packageList.appendChild(newPackage);
+    }
+
+
+    // JavaScript để thêm input cho danh sách Quantity
+    function abc() {
+        document.getElementById('addAmount').onclick = function () {
+            const amountList = document.getElementById('amount-list');
+            const newAmount = document.createElement('div');
+            newAmount.classList.add('form-group');
+            newAmount.innerHTML = `
+                <div style="background-color: #4CAF50">
+                    <div class="form-group"> 
+                        <label for="age">age:</label>
+                        <input style="width: 25%;" type="text" id="age" name="age" required>
+                    </div>
+                    <div class="form-group"> 
+                        <label for="price">price:</label>
+                        <input style="width: 25%;" type="text" id="price" name="price" required>
+                    </div>
+                </div>
+            `;
+            amountList.appendChild(newAmount);
+        }
+
+    }
+
+</script>
+
+</html>

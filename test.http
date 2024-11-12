@@ -42,20 +42,65 @@ POST http://localhost:8080/api/addProduct
 Content-Type: application/json
 
 {
-    "name": "Tour Đảo Nami, Petit France, Italy Village và Xe Đạp Đường Sắt Gangchon",
-    "image": "https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/a81tkckphpnjglunsqa4.webp",
+    "name": "Tour Thung Lũng Băng Eobi, Vườn Morning Calm, Đường Sắt Đạp Xe và Petite France",
+    "image": "https://res.klook.com/image/upload/c_fill,w_1265,h_712/q_80/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/rtdjz4jrig51mg2bxbw0.webp",
     "star": 0,
     "evaluate": 0,
     "booked": 0,
-    "notify": "notify\n\
-    abc",
+    "notify": null,
     "place": "Khởi hành từ Seoul",
-    "highlight": "highlight",
-    "information": "information",
+    "highlight": "<ul>\n<li>Tận hưởng tour du lịch Đảo Nami xinh đẹp</li>\n<li>Quà tặng độc quyền! Một chiếc áo mưa sẽ được tặng vào những ngày mưa và một túi giữ nhiệt sẽ được tặng vào mùa đông!</li>\n<li>Đến Đảo Nami, một khu nghỉ dưỡng du lịch với phong cảnh đẹp quanh năm và tự mình trải nghiệm sự lãng mạn trong bộ phim truyền hình Hàn Quốc nổi tiếng \"Bản tình ca mùa đông\".</li>\n<li>Làng Petite France do Hoàng tử bé dẫn đầu. Với chủ đề \"Hoa, Sao, Hoàng tử bé\", nơi đây bao gồm nhiều tòa nhà theo phong cách Pháp, tràn ngập màu sắc kỳ lạ.</li>\n<li>Đi xe đạp đường sắt Gangchon, lên tàu Dream Train và tận hưởng cảnh đẹp thiên nhiên trên đường đi.</li>\n</ul>",
+    "information": "<div class=\"dynamic-image\">\n      <p>\n        Hermes Cruises owns 18 luxury cabins, high-class restaurants, 2 outdoor\n        swimming pools and many outstanding facilities. The rooms are spaciously\n        designed, meticulously and passionately designed in neoclassical style\n        to bring you the most comfortable moments of rest. All rooms have a\n        large private balcony with glass doors, making the room brighter with\n        natural light, and giving guests a panoramic view of the beautiful Ha\n        Long Bay. Besides, you can also experience delicious and attractive\n        dishes at the luxury restaurant and professional massage services at the\n        Spa right on the cruise. The spacious sundeck area with open space and\n        outdoor bar will also provide memorable relaxing moments. And finally,\n        when traveling with Hermes, you are not only overwhelmed by the majestic\n        natural scenery in Ha Long Bay, but also enjoy interesting activities\n        and experiences ONLY at Hermes Cruises. Let us accompany you on your\n        journey to discover the beauty of beautiful Ha Long Bay!\n      </p>\n      <div>\n        <img\n          src=\"https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_728/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/b2id6fmtvahp02uua8rr/[Route2]2D1NHalongBayby5-StarHermesCruise.webp\"\n          alt=\"\"\n        />\n        <p>Explore Ha Long Bay with Route 2 by 5 Stars Hermes Cruise</p>\n      </div>\n      <div>\n        <img\n          src=\"https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1024,h_683/w_63,x_11,y_11,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/ntpfa2ikyszfw8a9ldqi/[Route2]2D1NHalongBayby5-StarHermesCruise.webp\"\n          alt=\"\"\n        />\n        <p>\n          The cruise ship is equipped with a well-equipped, comfortable room\n          with a balcony to eliminate fatigue on your journey\n        </p>\n      </div>\n      <div>\n        <img\n          src=\"https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_840,h_548/w_51,x_9,y_9,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/cyourgzfhahtdu1utagt/[Route2]2D1NHalongBayby5-StarHermesCruise.webp\"\n          alt=\"\"\n        />\n        <p>\n          A superb area for couples and families, the Junior suites cabin is\n          built with a very snug space thanks to the deep tone furniture grouped\n        </p>\n      </div>\n    </div>",
     "category": "Tour",
     "city": 9,
     "country": 2
 }
+
+# POST http://localhost:8080/api/addPackage
+# Content-Type: application/json
+
+
+# [
+#     {
+#        "name": "A. Thung lũng băng Eobi, Đảo Nami và Vườn Garden of Morning Calm",
+#        "quantitys": [
+#         {
+#             "age": "acb(123)",
+#             "price": 10000
+#         },
+#         {
+#             "age": "acb(123)",
+#             "price": 10000
+#         },
+#         {
+#             "age": "acb(123)",
+#             "price": 10000
+#         }
+#        ],
+#        "idProduct": 203
+#     },
+#     {
+#        "name": "A. Thung lũng băng Eobi, Đảo Nami và Vườn Garden of Morning Calm",
+#        "quantitys": [
+#         {
+#             "age": "acb(123)",
+#             "price": 10000
+#         },
+#         {
+#             "age": "acb(123)",
+#             "price": 10000
+#         },
+#         {
+#             "age": "acb(123)",
+#             "price": 10000
+#         }
+#        ],
+#        "idProduct": 203
+#     }
+# ]
+
+
+
 
 
 

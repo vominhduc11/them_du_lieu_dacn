@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="form-group">
+        <label for="information">Information:</label>
+
+        <div id="title-list">
+            <div class="form-group">
+                <div style="background-color: #C0C0C0;">
+                    <div class="form-group">
+                        <label for="nameTitle">nameTitle:</label>
+                        <input style="width: 50%;" type="text" class="nameTitle" name="nameTitle" required="">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div style="background-color: #C0C0C0;">
+                    <div class="form-group">
+                        <label for="nameTitle">nameTitle:</label>
+                        <input style="width: 50%;" type="text" class="nameTitle" name="nameTitle" required="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="img-list">
+            <div class="form-group">
+                <div style="background-color: #FF00FF;">
+                    <div class="form-group">
+                        <label for="link">link:</label>
+                        <input style="width: 50%;" type="text" class="link" name="link" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="nameImg">nameImg:</label>
+                        <input style="width: 50%;" type="text" class="nameImg" name="nameImg" required="">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div style="background-color: #FF00FF;">
+                    <div class="form-group">
+                        <label for="link">link:</label>
+                        <input style="width: 50%;" type="text" class="link" name="link" required="">
+                    </div>
+                    <div class="form-group">
+                        <label for="nameImg">nameImg:</label>
+                        <input style="width: 50%;" type="text" class="nameImg" name="nameImg" required="">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button type="button" id="addTitle">Add tiêu đề</button>
+        <button type="button" id="addImg">Add hình ảnh</button>
+    </div>
+
+    <div class="dynamic-image">
+        <p>Chúng tôi khuyên bạn nên tận hưởng quang cảnh và cảnh quan ban ngày hoặc ban đêm của Sông Hàn, một trung tâm
+            của Seoul. Hãy để lại những kỷ niệm tuyệt vời với những người thân yêu của bạn khi ngắm nhìn phong cảnh Sông
+            Hàn và Seoul dưới bầu trời xanh vào ban ngày! Hãy tạo nên khoảnh khắc khó quên khi bạn lên du thuyền!</p>
+        <h4>Du thuyền tham quan sông Hàn (40 phút)</h4>
+        <p><strong>• Ngày thường 11:20 / 12:50 / 14:50 / 15:50</strong>
+            <strong>• Cuối tuần (Thứ 7, Chủ Nhật), Ngày lễ 11:20 / 12:50 / 13:50 / 14:50 / 15:50</strong>
+        </p>
+        <h4>Du thuyền ngắm hoàng hôn (40 phút)</h4>
+        <p><strong>• Thời gian hoạt động: Tháng 2 ~ Tháng 10 17:50 / Tháng 11 ~ Tháng 1 16:50</strong></p>
+        <h4>Du thuyền ngắm trăng (70 phút)</h4>
+        <p><strong>• Thời gian hoạt động: Tháng 4 ~ Tháng 11 18:50, 20:20 / Tháng 12 ~ Tháng 3 19:20</strong></p>
+        <h4>Du thuyền ngắm sao (50 phút)</h4>
+        <p><strong>• Thời gian hoạt động: Tháng 4 ~ Tháng 11 21:50 / Tháng 12 ~ Tháng 3 20:50</strong></p>
+        <h4>Du thuyền ngắm pháo hoa (70 phút)</h4>
+        <p><strong>• Thời gian hoạt động: Thứ sáu 20:20 (Từ tháng 11: Thứ bảy 20:20)</strong></p>
+        <div>
+            <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/epycdadgouwpgz0f8oub/TrảiNghiệmDuThuyềnYeouidoElandNgắmSôngHànởSeoul.webp"
+                alt="">
+        </div>
+        <div>
+            <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/sbulymditsqpko1kxepe/TrảiNghiệmDuThuyềnYeouidoElandNgắmSôngHànởSeoul.webp"
+                alt="">
+        </div>
+        <div>
+            <img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1295,h_863/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/j360lustgoxb02xmzcqw/TrảiNghiệmDuThuyềnYeouidoElandNgắmSôngHànởSeoul.webp"
+                alt="">
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+        integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        async function name() {
+            await axios.post("http://localhost:8080/api/addPackage", [
+                {
+                    name: "abc",
+                    quantitys: [
+                        {
+                            age: "người lớn",
+                            price: 1222222
+                        },
+                        {
+                            age: "người lớn",
+                            price: 1222222
+                        }
+                    ],
+                    idProduct: 203
+                },
+                {
+                    name: "abc123",
+                    quantitys: [
+                        {
+                            age: "người lớn",
+                            price: 1222221
+                        }
+                    ],
+                    idProduct: 203
+                }
+            ])
+        }
+        name()
+    </script>
+</body>
+
+</html>

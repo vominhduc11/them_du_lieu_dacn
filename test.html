@@ -1,147 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="style.css" />
-  <title>Document</title>
-</head>
-
-<body>
-  <div class="form-group">
-    <label for="name">Product Name:</label>
-    <input type="text" id="name" name="name" />
-  </div>
-  <div class="form-group">
-    <label for="image">Image URL:</label>
-    <input type="text" id="image" name="image" required />
-  </div>
-  <div class="form-group">
-    <label for="notify">Notification:</label>
-    <input type="text" id="notify" name="notify" />
-  </div>
-  <div class="form-group">
-    <label for="place">Place:</label>
-    <input type="text" id="place" name="place" />
-  </div>
-  <div class="form-group">
-    <label for="highlight">Highlights:</label>
+  <body>
     <div class="form-group">
-      <label for="highlight">Highlight:</label>
-      <div id="highlight-list">
-        <!-- Các input sẽ được thêm vào ở đây -->
-      </div>
-      <button type="button" id="addHighlight">Add Highlight</button>
+      <label for="name">Product Name:</label>
+      <input type="text" id="name" name="name" />
     </div>
-  </div>
+    <div class="form-group">
+      <label for="image">Image URL:</label>
+      <input type="text" id="image" name="image" required />
+    </div>
+    <div class="form-group">
+      <label for="notify">Notification:</label>
+      <input type="text" id="notify" name="notify" />
+    </div>
+    <div class="form-group">
+      <label for="place">Place:</label>
+      <input type="text" id="place" name="place" />
+    </div>
+    <div class="form-group">
+      <label for="highlight">Highlights:</label>
+      <div class="form-group">
+        <label for="highlight">Highlight:</label>
+        <div id="highlight-list">
+          <!-- Các input sẽ được thêm vào ở đây -->
+        </div>
+        <button type="button" id="addHighlight">Add Highlight</button>
+      </div>
+    </div>
 
-  <div class="form-group">
-    <label for="information">Information:</label>
     <div class="form-group">
       <label for="information">Information:</label>
-      <div id="title-list"></div>
-      <div id="img-list"></div>
-      <button type="button" id="addTitle">Add tiêu đề</button>
-      <button type="button" id="addImg">Add hình ảnh</button>
+      <div class="form-group">
+        <label for="information">Information:</label>
+        <div id="title-list"></div>
+        <div id="img-list"></div>
+        <button type="button" id="addTitle">Add tiêu đề</button>
+        <button type="button" id="addImg">Add hình ảnh</button>
+      </div>
     </div>
-  </div>
 
-  <div class="form-group">
-    <label for="category">Category:</label>
-    <select id="category" name="category" required>
-      <option value="">-- Select Category --</option>
-      <option value="Tour">Tour</option>
-      <option value="Du thuyền">Du thuyền</option>
-      <option value="Massage & Suối nước nóng">Massage & Suối nước nóng</option>
-      <option value="Hoạt động dưới nước">Hoạt động dưới nước</option>
-      <option value="Phiêu lưu & Khám phá thiên nhiên">Phiêu lưu & Khám phá thiên nhiên</option>
-      <option value="Trải nghiệm văn hóa">Trải nghiệm văn hóa</option>
-    </select>
-  </div>
-
-  <div class="form-group">
-    <label for="city">City:</label>
-    <select id="city" name="city" required>
-      <option value="">-- Select City --</option>
-      <option value="1">Hà Nội</option>
-      <option value="2">Hồ Chí Minh</option>
-      <option value="3">Đà Nẵng</option>
-      <option value="4">Nha Trang</option>
-      <option value="5">Đà Lạt</option>
-      <option value="6">Quy Nhơn</option>
-      <option value="7">Seoul</option>
-      <option value="8">Busan</option>
-      <option value="9">Gangwon-do</option>
-      <option value="10">Gyeonggi-do</option>
-      <option value="11">Tokyo</option>
-      <option value="12">Kyoto</option>
-      <option value="13">Osaka</option>
-      <option value="14">Hokkaido</option>
-      <option value="15">Đài Bắc</option>
-      <option value="16">Đài Trung</option>
-      <option value="17">Nghi Lan</option>
-      <option value="18">Hoa Liên</option>
-      <option value="19">Thâm Quyến</option>
-      <option value="20">Quảng Châu</option>
-      <option value="21">Thượng Hải</option>
-      <option value="22">Bắc Kinh</option>
-      <option value="23">Bangkok</option>
-      <option value="24">Phuket</option>
-      <option value="25">Chiang Mai</option>
-      <option value="26">Krabi</option>
-      <option value="27">Sydney</option>
-      <option value="28">Melbourne</option>
-      <option value="29">Gold Coast</option>
-      <option value="30">Adelaide</option>
-    </select>
-  </div>
-  <div class="form-group">
-    <label for="country">Country:</label>
-    <select id="country" name="country" required>
-      <option value="">-- Select Country --</option>
-      <option value="1">Việt Nam</option>
-      <option value="2">Hàn Quốc</option>
-      <option value="3">Nhật Bản</option>
-      <option value="4">Đài Loan</option>
-      <option value="5">Trung Quốc</option>
-      <option value="6">Thái Lan</option>
-      <option value="7">Úc</option>
-    </select>
-  </div>
-
-  <div class="form-group">
-    <label for="package">Package:</label>
-    <div id="package-list">
-      <!-- Các input sẽ được thêm vào ở đây -->
+    <div class="form-group">
+      <label for="category">Category:</label>
+      <select id="category" name="category" required>
+        <option value="">-- Select Category --</option>
+        <option value="Tour">Tour</option>
+        <option value="Du thuyền">Du thuyền</option>
+        <option value="Massage & Suối nước nóng">
+          Massage & Suối nước nóng
+        </option>
+        <option value="Hoạt động dưới nước">Hoạt động dưới nước</option>
+        <option value="Phiêu lưu & Khám phá thiên nhiên">
+          Phiêu lưu & Khám phá thiên nhiên
+        </option>
+        <option value="Trải nghiệm văn hóa">Trải nghiệm văn hóa</option>
+      </select>
     </div>
-    <button type="button" id="addPackage">Add Package</button>
-  </div>
 
-  <button style="background-color: red" id="submit">Submit</button>
+    <div class="form-group">
+      <label for="city">City:</label>
+      <select id="city" name="city" required>
+        <option value="">-- Select City --</option>
+        <option value="1">Hà Nội</option>
+        <option value="2">Hồ Chí Minh</option>
+        <option value="3">Đà Nẵng</option>
+        <option value="4">Nha Trang</option>
+        <option value="5">Đà Lạt</option>
+        <option value="6">Quy Nhơn</option>
+        <option value="7">Seoul</option>
+        <option value="8">Busan</option>
+        <option value="9">Gangwon-do</option>
+        <option value="10">Gyeonggi-do</option>
+        <option value="11">Tokyo</option>
+        <option value="12">Kyoto</option>
+        <option value="13">Osaka</option>
+        <option value="14">Hokkaido</option>
+        <option value="15">Đài Bắc</option>
+        <option value="16">Đài Trung</option>
+        <option value="17">Nghi Lan</option>
+        <option value="18">Hoa Liên</option>
+        <option value="19">Thâm Quyến</option>
+        <option value="20">Quảng Châu</option>
+        <option value="21">Thượng Hải</option>
+        <option value="22">Bắc Kinh</option>
+        <option value="23">Bangkok</option>
+        <option value="24">Phuket</option>
+        <option value="25">Chiang Mai</option>
+        <option value="26">Krabi</option>
+        <option value="27">Sydney</option>
+        <option value="28">Melbourne</option>
+        <option value="29">Gold Coast</option>
+        <option value="30">Adelaide</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="country">Country:</label>
+      <select id="country" name="country" required>
+        <option value="">-- Select Country --</option>
+        <option value="1">Việt Nam</option>
+        <option value="2">Hàn Quốc</option>
+        <option value="3">Nhật Bản</option>
+        <option value="4">Đài Loan</option>
+        <option value="5">Trung Quốc</option>
+        <option value="6">Thái Lan</option>
+        <option value="7">Úc</option>
+      </select>
+    </div>
 
-</body>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
-  integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
-  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-  // Lấy giá trị của các input
-  const name1 = document.getElementById("name");
-  const image = document.getElementById("image");
-  const star = document.getElementById("star");
-  const evaluate = document.getElementById("evaluate");
-  const booked = document.getElementById("booked");
-  const notify = document.getElementById("notify");
-  const place = document.getElementById("place");
-  const category = document.getElementById("category");
-  const city = document.getElementById("city");
-  const country = document.getElementById("country");
-  // JavaScript để thêm input cho danh sách Quantity
-  document.getElementById("addPackage").onclick = function () {
-    const packageList = document.getElementById("package-list");
-    const newPackage = document.createElement("div");
-    newPackage.classList.add("form-group");
-    newPackage.innerHTML = `
+    <div class="form-group">
+      <label for="package">Package:</label>
+      <div id="package-list">
+        <!-- Các input sẽ được thêm vào ở đây -->
+      </div>
+      <button type="button" id="addPackage">Add Package</button>
+    </div>
+
+    <button style="background-color: red" id="submit">Submit</button>
+  </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.7.7/axios.min.js"
+    integrity="sha512-DdX/YwF5e41Ok+AI81HI8f5/5UsoxCVT9GKYZRIzpLxb8Twz4ZwPPX+jQMwMhNQ9b5+zDEefc+dcvQoPWGNZ3g=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script>
+    // Lấy giá trị của các input
+    const name1 = document.getElementById("name");
+    const image = document.getElementById("image");
+    const star = document.getElementById("star");
+    const evaluate = document.getElementById("evaluate");
+    const booked = document.getElementById("booked");
+    const notify = document.getElementById("notify");
+    const place = document.getElementById("place");
+    const category = document.getElementById("category");
+    const city = document.getElementById("city");
+    const country = document.getElementById("country");
+    // JavaScript để thêm input cho danh sách Quantity
+    document.getElementById("addPackage").onclick = function () {
+      const packageList = document.getElementById("package-list");
+      const newPackage = document.createElement("div");
+      newPackage.classList.add("form-group");
+      newPackage.innerHTML = `
                 <div style="background-color: antiquewhite;">
                     <div class="form-group">
                         <label for="package_name">Package_name:</label>
@@ -156,18 +161,18 @@
                     <button onclick="abc(this)" style="font-size:12px" type="button" class="addAmount">Add số lượng</button>
                 </div>
             `;
-    packageList.appendChild(newPackage);
-  };
+      packageList.appendChild(newPackage);
+    };
 
-  // JavaScript để thêm input cho danh sách Quantity
-  function abc(button) {
-    button.onclick = function () {
-      const previousSibling = button.previousElementSibling;
+    // JavaScript để thêm input cho danh sách Quantity
+    function abc(button) {
+      button.onclick = function () {
+        const previousSibling = button.previousElementSibling;
 
-      const amountList = previousSibling.querySelector(".amount-list");
-      const newAmount = document.createElement("div");
-      newAmount.classList.add("form-group");
-      newAmount.innerHTML = `
+        const amountList = previousSibling.querySelector(".amount-list");
+        const newAmount = document.createElement("div");
+        newAmount.classList.add("form-group");
+        newAmount.innerHTML = `
                 <div style="background-color: #4CAF50">
                     <div class="form-group">
                         <label for="age">age:</label>
@@ -179,16 +184,16 @@
                     </div>
                 </div>
             `;
-      amountList.appendChild(newAmount);
-    };
-  }
+        amountList.appendChild(newAmount);
+      };
+    }
 
-  // JavaScript để thêm input cho danh sách Highlight
-  document.getElementById("addHighlight").onclick = function () {
-    const packageList = document.getElementById("highlight-list");
-    const newPackage = document.createElement("div");
-    newPackage.classList.add("form-group");
-    newPackage.innerHTML = `
+    // JavaScript để thêm input cho danh sách Highlight
+    document.getElementById("addHighlight").onclick = function () {
+      const packageList = document.getElementById("highlight-list");
+      const newPackage = document.createElement("div");
+      newPackage.classList.add("form-group");
+      newPackage.innerHTML = `
                 <div style="background-color: #00FFFF;">
                     <div class="form-group">
                         <label for="name">name:</label>
@@ -196,15 +201,15 @@
                     </div>
                 </div>
             `;
-    packageList.appendChild(newPackage);
-  };
+      packageList.appendChild(newPackage);
+    };
 
-  // JavaScript để thêm input cho danh sách Information
-  document.getElementById("addTitle").onclick = function () {
-    const packageList = document.getElementById("title-list");
-    const newPackage = document.createElement("div");
-    newPackage.classList.add("form-group");
-    newPackage.innerHTML = `
+    // JavaScript để thêm input cho danh sách Information
+    document.getElementById("addTitle").onclick = function () {
+      const packageList = document.getElementById("title-list");
+      const newPackage = document.createElement("div");
+      newPackage.classList.add("form-group");
+      newPackage.innerHTML = `
                 <div style="background-color: #C0C0C0;">
                     <div class="form-group">
                         <label for="nameTitle">nameTitle:</label>
@@ -212,14 +217,14 @@
                     </div>
                 </div>
             `;
-    packageList.appendChild(newPackage);
-  };
+      packageList.appendChild(newPackage);
+    };
 
-  document.getElementById("addImg").onclick = function () {
-    const packageList = document.getElementById("img-list");
-    const newPackage = document.createElement("div");
-    newPackage.classList.add("form-group");
-    newPackage.innerHTML = `
+    document.getElementById("addImg").onclick = function () {
+      const packageList = document.getElementById("img-list");
+      const newPackage = document.createElement("div");
+      newPackage.classList.add("form-group");
+      newPackage.innerHTML = `
                 <div style="background-color: #FF00FF;">
                     <div class="form-group">
                         <label for="link">link:</label>
@@ -231,80 +236,94 @@
                     </div>
                 </div>
             `;
-    packageList.appendChild(newPackage);
-  };
+      packageList.appendChild(newPackage);
+    };
 
-  document.getElementById("submit").onclick = async function () {
-    //   console.log(name.value);
-    //   console.log(image.value);
-    //   console.log(star.value);
-    //   console.log(evaluate.value);
-    //   console.log(booked.value);
-    //   console.log(notify.value);
-    //   console.log(place.value);
-    //   console.log(name.value);
-    //   console.log(name.value);
-    //   console.log(name.value);
-    //   console.log(category.value);
-    //   console.log(city.value);
-    //   console.log(country.value);
+    document.getElementById("submit").onclick = async function () {
+      //   console.log(name.value);
+      //   console.log(image.value);
+      //   console.log(star.value);
+      //   console.log(evaluate.value);
+      //   console.log(booked.value);
+      //   console.log(notify.value);
+      //   console.log(place.value);
+      //   console.log(name.value);
+      //   console.log(name.value);
+      //   console.log(name.value);
+      //   console.log(category.value);
+      //   console.log(city.value);
+      //   console.log(country.value);
 
-    const highlightInputs = document.querySelectorAll(
-      "#highlight-list .name"
-    );
-    const ul = document.createElement("ul");
+      const highlightInputs = document.querySelectorAll(
+        "#highlight-list .name"
+      );
+      const ul = document.createElement("ul");
 
-    highlightInputs.forEach((input) => {
-      const li = document.createElement("li");
-      li.textContent = input.value;
-      ul.appendChild(li);
-    });
-
-    const divMain = document.createElement("div");
-    divMain.classList.add("dynamic-image")
-
-    const nameTitles = document.querySelector("#title-list").querySelectorAll(".nameTitle");
-    nameTitles.forEach(nameTitle => {
-      const p = document.createElement("p");
-      p.textContent = nameTitle.value;
-      divMain.appendChild(p);
-    })
-
-    const links = document.querySelector("#img-list").querySelectorAll(".link");
-    links.forEach(link => {
-      const div = document.createElement("div");
-
-      const img = document.createElement("img");
-      img.setAttribute("alt", "")
-      img.setAttribute("src", link.value)
-
-      const p = document.createElement("p");
-      p.textContent = link.closest('.form-group').parentNode.querySelector('.nameImg').value;
-
-      div.appendChild(img);
-      div.appendChild(p);
-
-      divMain.appendChild(div);
-    })
-
-    function acb(param) {
-      const packages = Array.from(document.querySelector("#package-list").querySelectorAll(".package_name")).map(ele => {
-        const arr = Array.from(ele.closest('.form-group').parentNode.querySelectorAll('.age')).map(ele1 => {
-          return {
-            age: ele1.value,
-            price: parseInt(ele1.closest('.form-group').parentNode.querySelector('.price').value)
-          };
-        });
-
-        return { name: ele.value, quantitys: arr, idProduct: param };
+      highlightInputs.forEach((input) => {
+        const li = document.createElement("li");
+        li.textContent = input.value;
+        ul.appendChild(li);
       });
 
-      return packages
-    }
+      const divMain = document.createElement("div");
+      divMain.classList.add("dynamic-image");
 
-    try {
-      const res = await axios.post("http://localhost:8080/api/addProduct",
-        {
+      const nameTitles = document
+        .querySelector("#title-list")
+        .querySelectorAll(".nameTitle");
+      nameTitles.forEach((nameTitle) => {
+        const p = document.createElement("p");
+        p.textContent = nameTitle.value;
+        divMain.appendChild(p);
+      });
+
+      const links = document
+        .querySelector("#img-list")
+        .querySelectorAll(".link");
+      links.forEach((link) => {
+        const div = document.createElement("div");
+
+        const img = document.createElement("img");
+        img.setAttribute("alt", "");
+        img.setAttribute("src", link.value);
+
+        const p = document.createElement("p");
+        p.textContent = link
+          .closest(".form-group")
+          .parentNode.querySelector(".nameImg").value;
+
+        div.appendChild(img);
+        div.appendChild(p);
+
+        divMain.appendChild(div);
+      });
+
+      function acb(param) {
+        const packages = Array.from(
+          document
+            .querySelector("#package-list")
+            .querySelectorAll(".package_name")
+        ).map((ele) => {
+          const arr = Array.from(
+            ele.closest(".form-group").parentNode.querySelectorAll(".age")
+          ).map((ele1) => {
+            return {
+              age: ele1.value,
+              price: parseInt(
+                ele1.closest(".form-group").parentNode.querySelector(".price")
+                  .value
+              ),
+            };
+          });
+
+          return { name: ele.value, quantitys: arr, idProduct: param };
+        });
+
+        return packages;
+      }
+
+      try {
+        const res = await axios.post("http://localhost:8080/api/addProduct", {
           name: name1.value,
           image: image.value,
           star: 0,
@@ -312,24 +331,20 @@
           booked: 0,
           notify: notify.value,
           place: place.value,
-          highlight: ul.outerHTML.replace(/"/g, '\\"'),
-          information: divMain.outerHTML.replace(/"/g, '\\"'),
+          highlight: ul.outerHTML,
+          information: divMain.outerHTML,
           category: category.value,
           city: parseInt(city.value),
-          country: parseInt(country.value)
-        }
-      )
+          country: parseInt(country.value),
+        });
+        // .replace(/"/g, '\\"')
 
-      await axios.post("http://localhost:8080/api/addPackage", acb(res.data))
+        await axios.post("http://localhost:8080/api/addPackage", acb(res.data));
 
-      alert("Thành công");
-    } catch (error) {
-      alert("Thất bại");
-    }
-  };
-
-
-
-</script>
-
+        alert("Thành công");
+      } catch (error) {
+        alert("Thất bại");
+      }
+    };
+  </script>
 </html>
